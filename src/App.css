@@ -1,38 +1,32 @@
 .App {
-  text-align: center;
+  display: flex; /* Flexbox düzeni kullanılıyor */
+  flex-direction: column; /* Elemanlar dikey olarak hizalanıyor */
+  align-items: center; /* Elemanlar ortalanıyor */
+  padding: 20px; /* İçerik çevresinde boşluk ekleniyor */
+  background-color: #94d7c7; /* Arka plan rengi belirleniyor */
+  min-height: 100vh; /* Sayfa yüksekliği tam ekran olacak şekilde ayarlanıyor */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appButton {
+  width: 200px; /* Buton genişliği ayarlanıyor */
+  background-color: #007bff; /* Buton arka plan rengi belirleniyor */
+  color: white; /* Buton metin rengi beyaz yapılıyor */
+  padding: 15px; /* Buton içi boşluk ekleniyor */
+  font-size: 18px; /* Metin boyutu belirleniyor */
+  border-radius: 8px; /* Köşeler yuvarlatılıyor */
+  border: none; /* Butonun kenarlığı kaldırılıyor */
+  margin-bottom: 20px; /* Buton altına boşluk ekleniyor */
+  cursor: pointer; /* Fare işareti buton üzerinde iken pointer oluyor */
+  transition: background-color 0.3s ease; /* Arka plan renginin değişim hızı ayarlanıyor */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appButton:hover {
+  background-color: #0056b3; /* Buton üzerine gelindiğinde arka plan rengi değişiyor */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.courseList {
+  display: flex; /* Kurslar flexbox ile hizalanıyor */
+  flex-wrap: wrap; /* Kurslar satır sonuna gelince alt satıra geçiyor */
+  justify-content: center; /* Kurslar ortalanıyor */
+  gap: 20px; /* Kurslar arasına boşluk ekleniyor */
 }

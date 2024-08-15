@@ -1,0 +1,20 @@
+.course {
+  width: 300px; /* Resim genişliği belirleniyor */
+  border-radius: 8px; /* Resim köşeleri yuvarlatılıyor */
+}
+
+.courseDiv {
+  margin: 10px; /* Kurs kartları arasına boşluk ekleniyor */
+  border: 1px solid lightgray; /* Kart kenarlığı belirleniyor */
+  padding: 15px; /* Kart içi boşluk ekleniyor */
+  border-radius: 10px; /* Kart köşeleri yuvarlatılıyor */
+  background-color: white; /* Kart arka planı beyaz yapılıyor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kartlara hafif bir gölge efekti ekleniyor */
+  transition: transform 0.2s ease; /* Kart üzerinde fare ile gezinildiğinde büyüme efekti uygulanıyor */
+}
+
+.courseDiv:hover {
+  transform: scale(
+    1.05
+  ); /* Kart üzerine gelindiğinde büyüme efekti uygulanıyor */
+}
